@@ -1,0 +1,20 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${TOROB_HTTP_PORT:-8000}:8000"
+    environment:
+      TOROB_DATA_MODE: "persistent"
+      SECURE_SSL_REDIRECT: "false"
+      TRUST_PROXY_HTTPS: "false"
+      LLM_API_KEY: "${LLM_API_KEY:-}"
+    volumes:
+      - torob_storage:/app/storage
+    restart: unless-stopped
+    stop_grace_period: 30s
+
+volumes:
+  torob_storage:
+

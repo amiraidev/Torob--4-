@@ -1,0 +1,22 @@
+.ai-analysis{margin:14px 0 18px;border:1px solid #eadbdd;background:#fffafb;border-radius:14px;padding:16px;min-width:0}
+.ai-analysis.rules{background:#f8f8fa;border-color:var(--line)}
+.ai-analysis-heading{display:flex;gap:8px;align-items:center;color:var(--red);font-size:12px}
+.ai-analysis.rules .ai-analysis-heading{color:#565967}
+.ai-analysis-status{font-size:11px;line-height:1.9;margin-top:7px;color:#626575}
+.model-comparisons{display:grid;gap:12px;margin-top:13px}
+.model-reason{min-width:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px}
+.model-reason p{font-size:11px;line-height:2;color:#414553;overflow-wrap:anywhere}
+.model-product-title{display:flex;gap:8px;align-items:center;text-align:right;font-weight:650;font-size:12px;color:var(--text);margin-bottom:7px;max-width:100%;overflow-wrap:anywhere}
+.model-product-title svg{flex-shrink:0}
+.model-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:10px 0}
+.model-specs>div{background:#f8f8fa;border-radius:7px;padding:8px;min-width:0}
+.model-specs dt{font-size:9px;color:#747786}
+.model-specs dd{font-size:10px;font-weight:500;margin:4px 0 0;line-height:1.8;overflow-wrap:anywhere}
+.model-tradeoff{margin-top:9px}
+.model-unknowns{font-size:10px;color:#7c5f3c;line-height:1.9;background:#fff9ef;padding:9px 11px;border-radius:7px;margin-top:10px}
+.model-unknowns ul,.model-tips ul{margin:6px 0;padding:0 18px 0 0}
+.model-tips{font-size:11px;margin-top:13px;line-height:2;color:#4e5262}
+.model-tips summary{cursor:pointer;display:flex;align-items:center;gap:6px;font-weight:600}
+.model-basis{display:block;font-size:9px;line-height:1.9;color:#747786;margin-top:11px}
+.status-row .model-name{font-size:10px;overflow-wrap:anywhere;max-width:65%;text-align:left}
+@media(max-width:760px){.ai-analysis{padding:12px;margin:11px 0 15px}.ai-analysis-heading{font-size:11px}.ai-analysis-status{font-size:10px}.model-reason{padding:10px}.model-reason p{font-size:10px}.model-product-title{font-size:11px}.model-specs{grid-template-columns:minmax(0,1fr)}.model-specs>div{padding:7px 9px}.model-unknowns,.model-tips{font-size:10px}.model-basis{font-size:9px}}

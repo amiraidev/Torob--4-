@@ -1,0 +1,17 @@
+node_modules/
+.venv/
+venv/
+.git/
+.openai/
+dist/
+bootstrap/
+storage/
+artifacts/
+backend/staticfiles/
+**/__pycache__/
+**/*.pyc
+**/*.sqlite3
+**/*.log
+.env.local
+public/data/catalog.json
+

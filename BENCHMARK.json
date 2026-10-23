@@ -1,0 +1,186 @@
+{
+  "versions": {
+    "before": "1.4.0",
+    "after": "1.5.0"
+  },
+  "date": "2026-10-23",
+  "units": "bytes, seconds, KiB RSS and milliseconds for search",
+  "sizes": {
+    "database_before": 691032064,
+    "database_after": 308461568,
+    "dataset_before": 60178644,
+    "dataset_after": 40629224,
+    "project_zip_before": 63019495
+  },
+  "catalog_build": {
+    "before": {
+      "build_seconds": 68.827,
+      "returncode": 0,
+      "child_peak_rss_kib": 95500,
+      "database_bytes": 691032064
+    },
+    "after": {
+      "build_seconds": 21.611,
+      "returncode": 0,
+      "child_peak_rss_kib": 61832,
+      "database_bytes": 308461568
+    }
+  },
+  "logical_data_identical": true,
+  "upgraded_data_identical": true,
+  "logical_data": {
+    "shopping_shop": {
+      "count": 6476,
+      "sha256": "3ed0c6817ddc995d0df770007889e5948fb8a348bf6882746c6c610d186bc650"
+    },
+    "shopping_product": {
+      "count": 225903,
+      "sha256": "6297b64d5707b08e32cdd2e202e3c1614493e377204776af3fd445bda78240a5"
+    },
+    "shopping_offer": {
+      "count": 331506,
+      "sha256": "6446d7646cde91269c1d3f2d1efc274a4f1dac7cfabf2fb02e6809531c66a1ce"
+    }
+  },
+  "sqlite_check": "ok",
+  "foreign_key_errors": 0,
+  "search_method": "4 calls per scenario; median of final 3; fixed logical clock 2026-10-23T12:00:00Z; dataset only, no LLM or live requests; equal-price tie order now deterministic by ID",
+  "searches": [
+    {
+      "preferences": {
+        "query": "سامسونگ a55",
+        "category": "گوشی موبایل"
+      },
+      "before_median_warm_ms": 3.906,
+      "after_median_warm_ms": 3.585,
+      "matched_before": 3,
+      "matched_after": 3
+    },
+    {
+      "preferences": {
+        "query": "asus",
+        "category": "لپ تاپ و نوت بوک",
+        "sort": "price"
+      },
+      "before_median_warm_ms": 2.658,
+      "after_median_warm_ms": 2.996,
+      "matched_before": 3,
+      "matched_after": 3
+    },
+    {
+      "preferences": {
+        "category": "گوشی موبایل",
+        "budget_max": 20000000,
+        "sort": "price"
+      },
+      "before_median_warm_ms": 114.348,
+      "after_median_warm_ms": 31.485,
+      "matched_before": 338,
+      "matched_after": 338
+    },
+    {
+      "preferences": {
+        "query": "هدفون",
+        "budget_max": 5000000
+      },
+      "before_median_warm_ms": 470.373,
+      "after_median_warm_ms": 358.769,
+      "matched_before": 906,
+      "matched_after": 906
+    },
+    {
+      "preferences": {
+        "category": "گوشی موبایل",
+        "installment": true
+      },
+      "before_median_warm_ms": 381.591,
+      "after_median_warm_ms": 75.823,
+      "matched_before": 24,
+      "matched_after": 24
+    },
+    {
+      "preferences": {
+        "budget_max": 50000000
+      },
+      "before_median_warm_ms": 6251.882,
+      "after_median_warm_ms": 596.078,
+      "matched_before": 1500,
+      "matched_after": 1500
+    }
+  ],
+  "tests": {
+    "django": 95,
+    "deployment": 7,
+    "javascript": 19,
+    "total": 121
+  },
+  "production_smoke": {
+    "readonly": {
+      "startup_seconds": 0.502,
+      "health": {
+        "status": "ok",
+        "backend": "django",
+        "service": "torob-yar",
+        "api_version": 3,
+        "app_version": "1.5.0",
+        "instance_id": "",
+        "llm_configured": false,
+        "llm_provider": "BoxAPI",
+        "llm_model": "prism-ml/ternary-bonsai-2-27b",
+        "llm_status": "disabled",
+        "catalog_ready": true,
+        "database_readonly": true,
+        "live_search_enabled": true,
+        "contacts_published": false
+      },
+      "chat_products": 12
+    },
+    "persistent": {
+      "startup_seconds": 1.721,
+      "health": {
+        "status": "ok",
+        "backend": "django",
+        "service": "torob-yar",
+        "api_version": 3,
+        "app_version": "1.5.0",
+        "instance_id": "",
+        "llm_configured": false,
+        "llm_provider": "BoxAPI",
+        "llm_model": "prism-ml/ternary-bonsai-2-27b",
+        "llm_status": "disabled",
+        "catalog_ready": true,
+        "database_readonly": false,
+        "live_search_enabled": true,
+        "contacts_published": false
+      },
+      "chat_products": 12
+    },
+    "restart": {
+      "startup_seconds": 1.26,
+      "health": {
+        "status": "ok",
+        "backend": "django",
+        "service": "torob-yar",
+        "api_version": 3,
+        "app_version": "1.5.0",
+        "instance_id": "",
+        "llm_configured": false,
+        "llm_provider": "BoxAPI",
+        "llm_model": "prism-ml/ternary-bonsai-2-27b",
+        "llm_status": "disabled",
+        "catalog_ready": true,
+        "database_readonly": false,
+        "live_search_enabled": true,
+        "contacts_published": false
+      },
+      "edits_and_key_preserved": true,
+      "chat_products": 12
+    },
+    "seed_unchanged": true,
+    "private_key_loaded": true,
+    "production_settings": true,
+    "deploy_check": "passed"
+  },
+  "docker_engine_available": false,
+  "live_boxapi_verified": false
+}

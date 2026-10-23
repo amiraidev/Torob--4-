@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "source_key": "c5fc88f4d187739d4942e00a5d573e597d41bd13f0eb0809c3a1b2aaf935696f",
+  "counts": {
+    "shops": 6476,
+    "products": 225903,
+    "offers": 331506
+  },
+  "storage_codec": "TYJ1",
+  "bundle_version": 2,
+  "catalog_kind": "full",
+  "logical_sha256": "14193ae58169cafc514905ab241ef5d3eb0cb36d9ae2086804eb9646bef18737"
+}
