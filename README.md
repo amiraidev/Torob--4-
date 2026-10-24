@@ -1,4 +1,3 @@
-<img width="1917" height="945" alt="image" src="https://github.com/user-attachments/assets/2b2dcef4-4e14-4712-a15f-b1b62216e462" /><div align="center">
 
 # ترب‌یار 🛍️
 
